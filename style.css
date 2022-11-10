@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(242, 235, 227);
+    padding: 20px 12px;
+}
+
+.container{
+    border-radius: 10px;
+    height: 500px;
+    margin-bottom: 20px;
+    
+}
+
+
+.product-image{
+    width: 351px;
+    border-radius: 10px 10px 0 0;
+    height: 249px;
+    margin-bottom: -3px;
+}
+
+@media screen and (min-width: 376px){
+    body{
+        vertical-align: middle;
+
+    }
+
+    .container{
+        width:600px;
+        display: flex;
+        margin-top: 60px;
+        margin-left: 350px;
+    }
+    .product-image-container{
+        width: 300px;
+    }
+    .product-image{
+        content: url(assets/image-product-desktop.jpg);
+        border-radius: 10px 0 0 10px;
+        height: 96%;
+        object-fit: cover;
+    }
+
+    .text-container{
+        border-radius: 0 10px 10px 0;
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+
+    }
+
+}
+
+.text-container{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.product-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: rgb(108, 114, 137);
+    margin-bottom: 8px;
+}
+
+.product-name{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 15px;
+}
+
+.product-description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: rgb(108, 114, 137);
+    margin-bottom: 20px;
+}
+
+.price-container{
+    display: flex;    
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.price-container > p{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: rgb(60, 128, 103);
+}
+
+.price-container > span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: rgb(108, 114, 137);
+    text-decoration: line-through;
+    margin-left: 15px;
+}
+
+button{
+    width: 100%;
+    background-color: rgb(60, 128, 103);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+button > div{
+    display: flex;
+    justify-content: center;
+}
+
+button > div > p{
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button > div > img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button :hover{
+    background-color: rgb(41, 97, 77);
+    border-radius: 10px;
+}
